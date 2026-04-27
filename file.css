@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e8f6ff;
+  color: #003f66;
+}
+
+header {
+  background: #0a6ebd;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #bfe6ff;
+}
+
+.section {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.price {
+  font-size: 18px;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  background: #0a6ebd;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .section h2 {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
