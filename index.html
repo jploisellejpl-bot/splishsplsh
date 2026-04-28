@@ -4,205 +4,111 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Splish Splash</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f9;
-}
-
-/* HERO */
-.hero {
-    position: relative;
-    height: 520px;
-    color: white;
-    overflow: hidden;
-}
-
-/* IMAGE BACKGROUND (PICKUP) */
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('pickup.jpg') center/cover no-repeat;
-    filter: brightness(0.6);
-}
-
-/* CONTENU */
-.hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding-top: 80px;
-}
-
-.logo {
-    width: 350px;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: 40px;
-    margin: 10px 0;
-}
-
-.hero p {
-    font-size: 20px;
-}
-
-.promo-box {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 12px 25px;
-    border: 2px solid #00bfff;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-/* VAGUE */
-.wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.wave svg {
-    width: 200%;
-    height: 120px;
-    animation: waveMove 8s linear infinite;
-}
-
-.wave path {
-    fill: #f4f6f9;
-}
-
-@keyframes waveMove {
-    0% {transform: translateX(0);}
-    100% {transform: translateX(-50%);}
-}
-
-/* SECTION */
-section {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* CARD */
-.card {
-    background: white;
-    margin: 10px;
-    padding: 20px;
-    width: 260px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.price {
-    font-size: 28px;
-    color: #0070f3;
-    font-weight: bold;
-}
-
-.old {
-    text-decoration: line-through;
-    color: grey;
-}
-
-.btn {
-    margin-top: 15px;
-    display: inline-block;
-    padding: 12px 20px;
-    background: #0070f3;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: #0059c1;
-}
-
-/* FOOTER */
-footer {
-    background: #001f3f;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
+<!-- HEADER FULL LOGO -->
+<header class="hero">
+    <img src="logo.png" class="hero-logo">
 
-    <div class="hero-content">
-        <img src="logo.png" class="logo">
-
-        <h1>ABONNEMENTS – 50% PREMIER MOIS</h1>
-
-        <div class="promo-box">
-            CODE PROMO : STDONAT50
-        </div>
+    <div class="hero-text">
+        <h1>SPLISH SPLASH</h1>
+        <p>Abonnements – 50% premier mois</p>
+        <p class="promo">Code promo : STDONAT50</p>
     </div>
-
-    <!-- VAGUE -->
-    <div class="wave">
-        <svg viewBox="0 0 1200 120">
-            <path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z"></path>
-        </svg>
-    </div>
-
-</div>
+</header>
 
 <!-- INDIVIDUEL -->
 <section>
-<h2>INDIVIDUEL</h2>
+<h2>Individuel</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>EXPRESS</h3>
-<p class="price">27,99 $</p>
-<p class="old">55,99 $</p>
+<h3>Express</h3>
+<p class="promo-price">27,99 $</p>
+<p class="old-price">55,99 $</p>
 <a class="btn" href="https://buy.stripe.com/dRmaEQesffoZccndp61ZS03" target="_blank">S’abonner</a>
 </div>
 
 <div class="card">
-<h3>DELUXE</h3>
-<p class="price">34,99 $</p>
-<p class="old">69,99 $</p>
+<h3>Deluxe</h3>
+<p class="promo-price">34,99 $</p>
+<p class="old-price">69,99 $</p>
 <a class="btn" href="https://buy.stripe.com/7sYfZagAn90Bdgr2Ks1ZS02" target="_blank">S’abonner</a>
 </div>
 
 <div class="card">
-<h3>ULTIME</h3>
-<p class="price">35,00 $</p>
-<p class="old">70,00 $</p>
+<h3>Ultime</h3>
+<p class="promo-price">35,00 $</p>
+<p class="old-price">70,00 $</p>
 <a class="btn" href="https://buy.stripe.com/00w9AM1Ft90B6S3eta1ZS00" target="_blank">S’abonner</a>
 </div>
 
 </div>
 </section>
 
+<!-- FAMILLE -->
+<section>
+<h2>Famille</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Famille 2</h3>
+<p class="promo-price">52,50 $</p>
+<p class="old-price">105,00 $</p>
+<a class="btn" href="https://buy.stripe.com/bJedR2ck7a4Ffozdp61ZS0j" target="_blank">S’abonner</a>
+</div>
+
+<div class="card">
+<h3>Famille 3</h3>
+<p class="promo-price">70,00 $</p>
+<p class="old-price">140,00 $</p>
+<a class="btn" href="https://buy.stripe.com/9B69AM5VJ7Wx1xJ0Ck1ZS0i" target="_blank">S’abonner</a>
+</div>
+
+<div class="card">
+<h3>Famille 4</h3>
+<p class="promo-price">87,50 $</p>
+<p class="old-price">175,00 $</p>
+<a class="btn" href="https://buy.stripe.com/9B6fZa6ZN0u5b8j2Ks1ZS0h" target="_blank">S’abonner</a>
+</div>
+
+</div>
+</section>
+
+<!-- ENTREPRISE -->
+<section>
+<h2>Entreprise</h2>
+
+<div class="cards">
+
+<div class="card"><h3>Entreprise 5</h3><p class="promo-price">95,00 $</p><p class="old-price">190,00 $</p><a class="btn" href="https://buy.stripe.com/bJe6oA5VJb8JekvbgY1ZS0f" target="_blank">S’abonner</a></div>
+
+<div class="card"><h3>Entreprise 6</h3><p class="promo-price">110,00 $</p><p class="old-price">220,00 $</p><a class="btn" href="https://buy.stripe.com/7sYdR2abZccN7W784M1ZS0e" target="_blank">S’abonner</a></div>
+
+<div class="card"><h3>Entreprise 7</h3><p class="promo-price">125,00 $</p><p class="old-price">250,00 $</p><a class="btn" href="https://buy.stripe.com/fZu8wI1FtfoZekv2Ks1ZS0d" target="_blank">S’abonner</a></div>
+
+<div class="card"><h3>Entreprise 8</h3><p class="promo-price">140,00 $</p><p class="old-price">280,00 $</p><a class="btn" href="https://buy.stripe.com/28EaEQdob1y94JVbgY1ZS0c" target="_blank">S’abonner</a></div>
+
+<div class="card"><h3>Entreprise 9</h3><p class="promo-price">155,00 $</p><p class="old-price">310,00 $</p><a class="btn" href="https://buy.stripe.com/dRm3co97V4Kl0tF4SA1ZS0b" target="_blank">S’abonner</a></div>
+
+</div>
+</section>
+
+<!-- MAP -->
+<section>
+<h2>📍 Adresse</h2>
+<iframe class="map" src="https://www.google.com/maps?q=820+Principale+Saint-Donat&output=embed"></iframe>
+</section>
+
 <!-- FOOTER -->
 <footer>
 <p>820 Principale, Saint-Donat, QC</p>
-<p>
-<a href="https://www.facebook.com/profile.php?id=61580619532571" style="color:#00bfff;" target="_blank">
-Facebook
-</a>
-</p>
-<p>© Splish Splash</p>
+<a href="https://www.facebook.com/profile.php?id=61580619532571" target="_blank">Facebook</a>
 </footer>
 
 </body>
