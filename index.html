@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-/* BULLES ANIMÉES */
+/* BULLES */
 .bubble {
     position: fixed;
     bottom: -100px;
@@ -23,7 +23,6 @@ body {
     border-radius: 50%;
     animation: rise 10s infinite ease-in;
 }
-
 @keyframes rise {
     0% {transform: translateY(0);}
     100% {transform: translateY(-120vh);}
@@ -61,9 +60,14 @@ section {
     color: #0070f3;
 }
 
+.regular {
+    text-decoration: line-through;
+    color: grey;
+}
+
 .btn {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 12px 20px;
     background: #0070f3;
     color: white;
@@ -110,62 +114,93 @@ footer {
 <header>
 <img src="logo.png" class="logo">
 <h1>SPLISH SPLASH</h1>
-<p>Abonnements de lavage – 50% premier mois</p>
+<p>Abonnements – 50% premier mois</p>
 <p><strong>Code promo : STDONAT50</strong></p>
 </header>
 
+<!-- INDIVIDUEL -->
 <section>
-<h2>Nos forfaits</h2>
+<h2>Individuel</h2>
 
 <div class="card">
 <h3>Express</h3>
 <p class="promo">27,99 $</p>
+<p class="regular">55,99 $</p>
 <a class="btn" href="https://buy.stripe.com/dRmaEQesffoZccndp61ZS03" target="_blank">S’abonner</a>
 </div>
 
 <div class="card">
 <h3>Deluxe</h3>
 <p class="promo">34,99 $</p>
+<p class="regular">69,99 $</p>
 <a class="btn" href="https://buy.stripe.com/7sYfZagAn90Bdgr2Ks1ZS02" target="_blank">S’abonner</a>
 </div>
 
 <div class="card">
 <h3>Ultime</h3>
 <p class="promo">35,00 $</p>
+<p class="regular">70,00 $</p>
 <a class="btn" href="https://buy.stripe.com/00w9AM1Ft90B6S3eta1ZS00" target="_blank">S’abonner</a>
 </div>
 
 </section>
 
+<!-- FAMILLE -->
+<section>
+<h2>Famille</h2>
+
+<div class="card">
+<h3>Famille 2</h3>
+<p class="promo">52,50 $</p>
+<p class="regular">105,00 $</p>
+<a class="btn" href="https://buy.stripe.com/bJedR2ck7a4Ffozdp61ZS0j" target="_blank">S’abonner</a>
+</div>
+
+<div class="card">
+<h3>Famille 3</h3>
+<p class="promo">70,00 $</p>
+<p class="regular">140,00 $</p>
+<a class="btn" href="https://buy.stripe.com/9B69AM5VJ7Wx1xJ0Ck1ZS0i" target="_blank">S’abonner</a>
+</div>
+
+<div class="card">
+<h3>Famille 4</h3>
+<p class="promo">87,50 $</p>
+<p class="regular">175,00 $</p>
+<a class="btn" href="https://buy.stripe.com/9B6fZa6ZN0u5b8j2Ks1ZS0h" target="_blank">S’abonner</a>
+</div>
+
+</section>
+
+<!-- ENTREPRISE -->
+<section>
+<h2>Entreprise</h2>
+
+<div class="card"><h3>Entreprise 5</h3><p class="promo">95,00 $</p><p class="regular">190,00 $</p><a class="btn" href="https://buy.stripe.com/bJe6oA5VJb8JekvbgY1ZS0f" target="_blank">S’abonner</a></div>
+
+<div class="card"><h3>Entreprise 6</h3><p class="promo">110,00 $</p><p class="regular">220,00 $</p><a class="btn" href="https://buy.stripe.com/7sYdR2abZccN7W784M1ZS0e" target="_blank">S’abonner</a></div>
+
+<div class="card"><h3>Entreprise 7</h3><p class="promo">125,00 $</p><p class="regular">250,00 $</p><a class="btn" href="https://buy.stripe.com/fZu8wI1FtfoZekv2Ks1ZS0d" target="_blank">S’abonner</a></div>
+
+<div class="card"><h3>Entreprise 8</h3><p class="promo">140,00 $</p><p class="regular">280,00 $</p><a class="btn" href="https://buy.stripe.com/28EaEQdob1y94JVbgY1ZS0c" target="_blank">S’abonner</a></div>
+
+<div class="card"><h3>Entreprise 9</h3><p class="promo">155,00 $</p><p class="regular">310,00 $</p><a class="btn" href="https://buy.stripe.com/dRm3co97V4Kl0tF4SA1ZS0b" target="_blank">S’abonner</a></div>
+
+</section>
+
 <!-- MAP -->
 <section>
-<h2>📍 Nous trouver</h2>
-
-<iframe 
-class="map"
-src="https://www.google.com/maps?q=820+Principale+Saint-Donat&output=embed">
-</iframe>
-
+<h2>📍 Adresse</h2>
+<iframe class="map" src="https://www.google.com/maps?q=820+Principale+Saint-Donat&output=embed"></iframe>
 </section>
 
 <!-- AVIS -->
 <section>
 <h2>⭐ Avis clients</h2>
 
-<div class="review">
-<p>⭐⭐⭐⭐⭐</p>
-<p>Service rapide et impeccable!</p>
-</div>
-
-<div class="review">
-<p>⭐⭐⭐⭐⭐</p>
-<p>Le meilleur lave-auto à Saint-Donat 🔥</p>
-</div>
-
-<div class="review">
-<p>⭐⭐⭐⭐⭐</p>
-<p>Super abonnement, ça vaut la peine!</p>
-</div>
+<div class="review"><p>⭐⭐⭐⭐⭐</p><p>Service impeccable!</p></div>
+<div class="review"><p>⭐⭐⭐⭐⭐</p><p>Très rapide et efficace 🔥</p></div>
+<div class="review"><p>⭐⭐⭐⭐⭐</p><p>Le meilleur à St-Donat</p></div>
 
 </section>
 
