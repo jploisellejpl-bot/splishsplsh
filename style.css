@@ -5,21 +5,18 @@ body {
 
 /* HERO */
 .hero {
+    height: 600px;
+    background: url("hero.jpg") center/cover no-repeat;
     position: relative;
-    height: 550px;
-    background: url("image.jpg") center/cover no-repeat;
 }
 
-/* OVERLAY */
+/* OVERLAY (léger pour lisibilité) */
 .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
 
-    background: radial-gradient(circle at center,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.85)
-    );
+    background: rgba(0,0,0,0.3);
 
     display: flex;
     flex-direction: column;
@@ -30,31 +27,10 @@ body {
     text-align: center;
 }
 
-/* WRAPPER LOGO (effet intégration) */
-.logo-wrapper {
-    padding: 20px;
-    border-radius: 20px;
-
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(8px);
-
-    box-shadow: 0 0 40px rgba(0,180,255,0.3);
-    margin-bottom: 20px;
-}
-
-/* LOGO */
-.logo {
-    width: 420px;
-    max-width: 90%;
-
-    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.7));
-}
-
 /* TITRE */
 h1 {
     font-size: 42px;
     margin: 10px 0;
-    letter-spacing: 2px;
 }
 
 /* PROMO */
