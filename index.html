@@ -1,115 +1,176 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>laveautosplishsplash.ca</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splish Splash - Abonnements</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: #0a2540;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .hero {
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 12px;
+            display: inline-block;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .promo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0070f3;
+        }
+
+        .regular {
+            text-decoration: line-through;
+            color: grey;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #0070f3;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0059c1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0a2540;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-  <img src="logo.png" alt="Splish Splash" class="logo">
-  <nav>
-    <a href="#individuel">Individuel</a>
-    <a href="#famille">Famille</a>
-    <a href="#entreprise">Entreprise</a>
-  </nav>
+    <nav>
+        <ul>
+            <li>Accueil</li>
+            <li>Abonnements</li>
+            <li>Famille</li>
+            <li>Entreprise</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>SPLISH SPLASH</h1>
+        <p>Vos abonnements de lavage – Premier mois à 50%</p>
+    </div>
 </header>
 
-<section class="hero">
-  <h1>Abonnements Splish Splash</h1>
-  <p>Le premier mois à -50%</p>
+<section>
+    <h2>Abonnements Individuels</h2>
+
+    <div class="card">
+        <h3>Express</h3>
+        <p class="promo">27,99 $</p>
+        <p class="regular">55,99 $ / mois</p>
+        <a class="btn" href="https://buy.stripe.com/dRmaEQesffoZccndp61ZS03" target="_blank">S’abonner</a>
+    </div>
+
+    <div class="card">
+        <h3>Deluxe</h3>
+        <p class="promo">34,99 $</p>
+        <p class="regular">69,99 $ / mois</p>
+        <a class="btn" href="https://buy.stripe.com/7sYfZagAn90Bdgr2Ks1ZS02" target="_blank">S’abonner</a>
+    </div>
+
+    <div class="card">
+        <h3>Ultime</h3>
+        <p class="promo">35,00 $</p>
+        <p class="regular">70,00 $ / mois</p>
+        <a class="btn" href="https://buy.stripe.com/00w9AM1Ft90B6S3eta1ZS00" target="_blank">S’abonner</a>
+    </div>
 </section>
 
+<section>
+    <h2>Abonnements Famille</h2>
 
-<!-- INDIVIDUEL -->
-<section id="individuel" class="section">
-  <h2>Individuel</h2>
+    <div class="card">
+        <h3>Famille 2</h3>
+        <p class="promo">52,50 $</p>
+        <p class="regular">105,00 $ / mois</p>
+        <a class="btn" href="https://buy.stripe.com/bJedR2ck7a4Ffozdp61ZS0j" target="_blank">S’abonner</a>
+    </div>
 
-  <div class="card">
-    <h3>Express</h3>
-    <p class="price"><strong>27,99 $</strong> premier mois<br>55,99 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/dRmaEQesffoZccndp61ZS03)" class="btn">S’abonner</a>
-  </div>
+    <div class="card">
+        <h3>Famille 3</h3>
+        <p class="promo">70,00 $</p>
+        <p class="regular">140,00 $ / mois</p>
+        <a class="btn" href="https://buy.stripe.com/9B69AM5VJ7Wx1xJ0Ck1ZS0i" target="_blank">S’abonner</a>
+    </div>
 
-  <div class="card">
-    <h3>Deluxe</h3>
-    <p class="price"><strong>34,99 $</strong> premier mois<br>69,99 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/7sYfZagAn90Bdgr2Ks1ZS02)" class="btn">S’abonner</a>
-  </div>
-
-  <div class="card">
-    <h3>Ultime</h3>
-    <p class="price"><strong>35,00 $</strong> premier mois<br>70,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/00w9AM1Ft90B6S3eta1ZS00)" class="btn">S’abonner</a>
-  </div>
+    <div class="card">
+        <h3>Famille 4</h3>
+        <p class="promo">87,50 $</p>
+        <p class="regular">175,00 $ / mois</p>
+        <a class="btn" href="https://buy.stripe.com/9B6fZa6ZN0u5b8j2Ks1ZS0h" target="_blank">S’abonner</a>
+    </div>
 </section>
 
+<section>
+    <h2>Abonnements Entreprise</h2>
 
-<!-- FAMILLE -->
-<section id="famille" class="section">
-  <h2>Famille</h2>
+    <div class="card">
+        <h3>Entreprise 5</h3>
+        <p class="promo">95,00 $</p>
+        <p class="regular">190,00 $ / mois</p>
+        <a class="btn" href="https://buy.stripe.com/bJe6oA5VJb8JekvbgY1ZS0f" target="_blank">S’abonner</a>
+    </div>
 
-  <div class="card">
-    <h3>Famille 2</h3>
-    <p class="price"><strong>52,50 $</strong> premier mois<br>105,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/bJedR2ck7a4Ffozdp61ZS0j)" class="btn">S’abonner</a>
-  </div>
+    <div class="card">
+        <h3>Entreprise 6</h3>
+        <p class="promo">110,00 $</p>
+        <p class="regular">220,00 $ / mois</p>
+        <a class="btn" href="https://buy.stripe.com/7sYdR2abZccN7W784M1ZS0e" target="_blank">S’abonner</a>
+    </div>
 
-  <div class="card">
-    <h3>Famille 3</h3>
-    <p class="price"><strong>70,00 $</strong> premier mois<br>140,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/9B69AM5VJ7Wx1xJ0Ck1ZS0i)" class="btn">S’abonner</a>
-  </div>
-
-  <div class="card">
-    <h3>Famille 4</h3>
-    <p class="price"><strong>87,50 $</strong> premier mois<br>175,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/9B6fZa6ZN0u5b8j2Ks1ZS0h)" class="btn">S’abonner</a>
-  </div>
 </section>
-
-
-<!-- ENTREPRISE -->
-<section id="entreprise" class="section">
-  <h2>Entreprise</h2>
-
-  <div class="card">
-    <h3>Entreprise 5</h3>
-    <p class="price"><strong>95,00 $</strong> premier mois<br>190,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/bJe6oA5VJb8JekvbgY1ZS0f)" class="btn">S’abonner</a>
-  </div>
-
-  <div class="card">
-    <h3>Entreprise 6</h3>
-    <p class="price"><strong>110,00 $</strong> premier mois<br>220,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/7sYdR2abZccN7W784M1ZS0e)" class="btn">S’abonner</a>
-  </div>
-
-  <div class="card">
-    <h3>Entreprise 7</h3>
-    <p class="price"><strong>125,00 $</strong> premier mois<br>250,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/fZu8wI1FtfoZekv2Ks1ZS0d)" class="btn">S’abonner</a>
-  </div>
-
-  <div class="card">
-    <h3>Entreprise 8</h3>
-    <p class="price"><strong>140,00 $</strong> premier mois<br>280,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/28EaEQdob1y94JVbgY1ZS0c)" class="btn">S’abonner</a>
-  </div>
-
-  <div class="card">
-    <h3>Entreprise 9</h3>
-    <p class="price"><strong>155,00 $</strong> premier mois<br>310,00 $ régulier</p>
-    <a href="[buy.stripe.com](https://buy.stripe.com/dRm3co97V4Kl0tF4SA1ZS0b)" class="btn">S’abonner</a>
-  </div>
-</section>
-
 
 <footer>
-  <p>© 2026 laveautosplishsplash.ca</p>
+    <p>© Splish Splash • Tous droits réservés</p>
 </footer>
 
 </body>
