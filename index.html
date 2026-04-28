@@ -1,176 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splish Splash - Abonnements</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splish Splash</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eaf6ff;
+    overflow-x: hidden;
+}
 
-        header {
-            background: #0a2540;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* BULLES ANIMÉES */
+.bubble {
+    position: fixed;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,150,255,0.2);
+    border-radius: 50%;
+    animation: rise 10s infinite ease-in;
+}
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            list-style: none;
-            padding: 0;
-        }
+@keyframes rise {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-120vh);}
+}
 
-        .hero {
-            margin-top: 20px;
-        }
+header {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-        section {
-            padding: 40px;
-            text-align: center;
-        }
+.logo {
+    max-width: 220px;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 15px;
-            border-radius: 12px;
-            display: inline-block;
-            width: 250px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
 
-        .promo {
-            font-size: 22px;
-            font-weight: bold;
-            color: #0070f3;
-        }
+.card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 260px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
-        .regular {
-            text-decoration: line-through;
-            color: grey;
-        }
+.promo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0070f3;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 20px;
-            background: #0070f3;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #0070f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
 
-        .btn:hover {
-            background: #0059c1;
-        }
+.btn:hover {
+    background: #0059c1;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #0a2540;
-            color: white;
-        }
-    </style>
+.map {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.review {
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 250px;
+}
+
+footer {
+    background: #0a2540;
+    color: white;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li>Accueil</li>
-            <li>Abonnements</li>
-            <li>Famille</li>
-            <li>Entreprise</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+<!-- BULLES -->
+<div class="bubble" style="left:10%; animation-duration:8s;"></div>
+<div class="bubble" style="left:30%; animation-duration:12s;"></div>
+<div class="bubble" style="left:50%; animation-duration:10s;"></div>
+<div class="bubble" style="left:70%; animation-duration:14s;"></div>
+<div class="bubble" style="left:90%; animation-duration:9s;"></div>
 
-    <div class="hero">
-        <h1>SPLISH SPLASH</h1>
-        <p>Vos abonnements de lavage – Premier mois à 50%</p>
-    </div>
+<header>
+<img src="logo.png" class="logo">
+<h1>SPLISH SPLASH</h1>
+<p>Abonnements de lavage – 50% premier mois</p>
+<p><strong>Code promo : STDONAT50</strong></p>
 </header>
 
 <section>
-    <h2>Abonnements Individuels</h2>
+<h2>Nos forfaits</h2>
 
-    <div class="card">
-        <h3>Express</h3>
-        <p class="promo">27,99 $</p>
-        <p class="regular">55,99 $ / mois</p>
-        <a class="btn" href="https://buy.stripe.com/dRmaEQesffoZccndp61ZS03" target="_blank">S’abonner</a>
-    </div>
+<div class="card">
+<h3>Express</h3>
+<p class="promo">27,99 $</p>
+<a class="btn" href="https://buy.stripe.com/dRmaEQesffoZccndp61ZS03" target="_blank">S’abonner</a>
+</div>
 
-    <div class="card">
-        <h3>Deluxe</h3>
-        <p class="promo">34,99 $</p>
-        <p class="regular">69,99 $ / mois</p>
-        <a class="btn" href="https://buy.stripe.com/7sYfZagAn90Bdgr2Ks1ZS02" target="_blank">S’abonner</a>
-    </div>
+<div class="card">
+<h3>Deluxe</h3>
+<p class="promo">34,99 $</p>
+<a class="btn" href="https://buy.stripe.com/7sYfZagAn90Bdgr2Ks1ZS02" target="_blank">S’abonner</a>
+</div>
 
-    <div class="card">
-        <h3>Ultime</h3>
-        <p class="promo">35,00 $</p>
-        <p class="regular">70,00 $ / mois</p>
-        <a class="btn" href="https://buy.stripe.com/00w9AM1Ft90B6S3eta1ZS00" target="_blank">S’abonner</a>
-    </div>
+<div class="card">
+<h3>Ultime</h3>
+<p class="promo">35,00 $</p>
+<a class="btn" href="https://buy.stripe.com/00w9AM1Ft90B6S3eta1ZS00" target="_blank">S’abonner</a>
+</div>
+
 </section>
 
+<!-- MAP -->
 <section>
-    <h2>Abonnements Famille</h2>
+<h2>📍 Nous trouver</h2>
 
-    <div class="card">
-        <h3>Famille 2</h3>
-        <p class="promo">52,50 $</p>
-        <p class="regular">105,00 $ / mois</p>
-        <a class="btn" href="https://buy.stripe.com/bJedR2ck7a4Ffozdp61ZS0j" target="_blank">S’abonner</a>
-    </div>
+<iframe 
+class="map"
+src="https://www.google.com/maps?q=820+Principale+Saint-Donat&output=embed">
+</iframe>
 
-    <div class="card">
-        <h3>Famille 3</h3>
-        <p class="promo">70,00 $</p>
-        <p class="regular">140,00 $ / mois</p>
-        <a class="btn" href="https://buy.stripe.com/9B69AM5VJ7Wx1xJ0Ck1ZS0i" target="_blank">S’abonner</a>
-    </div>
-
-    <div class="card">
-        <h3>Famille 4</h3>
-        <p class="promo">87,50 $</p>
-        <p class="regular">175,00 $ / mois</p>
-        <a class="btn" href="https://buy.stripe.com/9B6fZa6ZN0u5b8j2Ks1ZS0h" target="_blank">S’abonner</a>
-    </div>
 </section>
 
+<!-- AVIS -->
 <section>
-    <h2>Abonnements Entreprise</h2>
+<h2>⭐ Avis clients</h2>
 
-    <div class="card">
-        <h3>Entreprise 5</h3>
-        <p class="promo">95,00 $</p>
-        <p class="regular">190,00 $ / mois</p>
-        <a class="btn" href="https://buy.stripe.com/bJe6oA5VJb8JekvbgY1ZS0f" target="_blank">S’abonner</a>
-    </div>
+<div class="review">
+<p>⭐⭐⭐⭐⭐</p>
+<p>Service rapide et impeccable!</p>
+</div>
 
-    <div class="card">
-        <h3>Entreprise 6</h3>
-        <p class="promo">110,00 $</p>
-        <p class="regular">220,00 $ / mois</p>
-        <a class="btn" href="https://buy.stripe.com/7sYdR2abZccN7W784M1ZS0e" target="_blank">S’abonner</a>
-    </div>
+<div class="review">
+<p>⭐⭐⭐⭐⭐</p>
+<p>Le meilleur lave-auto à Saint-Donat 🔥</p>
+</div>
+
+<div class="review">
+<p>⭐⭐⭐⭐⭐</p>
+<p>Super abonnement, ça vaut la peine!</p>
+</div>
 
 </section>
 
 <footer>
-    <p>© Splish Splash • Tous droits réservés</p>
+<p>820 Principale, Saint-Donat, QC</p>
+
+<p>
+<a href="https://www.facebook.com/profile.php?id=61580619532571" target="_blank" style="color:#00bfff;">
+Facebook
+</a>
+</p>
+
+<p>© Splish Splash</p>
 </footer>
 
 </body>
