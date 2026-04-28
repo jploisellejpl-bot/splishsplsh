@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
-/* HERO IMAGE */
+/* HERO */
 .hero {
     height: 600px;
     background: url("hero.jpg") center/cover no-repeat;
@@ -11,13 +11,9 @@ body {
 
 /* SECTIONS */
 section {
-    padding: 50px 20px;
+    padding: 50px;
     text-align: center;
     background: #f4f6f9;
-}
-
-h2 {
-    margin-bottom: 30px;
 }
 
 /* CARDS */
@@ -36,10 +32,33 @@ h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* BADGES */
+.badge {
+    background: #0070f3;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.badge2 {
+    background: orange;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* PRICE */
 .price {
     font-size: 22px;
     color: #0070f3;
     font-weight: bold;
+}
+
+.price span {
+    font-size: 14px;
+    color: grey;
 }
 
 .old {
@@ -47,18 +66,26 @@ h2 {
     color: grey;
 }
 
+/* BUTTON */
 .card a {
     display: inline-block;
     margin-top: 10px;
-    padding: 12px 20px;
+    padding: 12px;
     background: #0070f3;
     color: white;
     border-radius: 8px;
     text-decoration: none;
 }
 
-.card a:hover {
-    background: #0059c1;
+/* INFO */
+.info {
+    color: #0070f3;
+    font-size: 14px;
+}
+
+.tag {
+    font-size: 14px;
+    color: grey;
 }
 
 /* MAP */
@@ -73,11 +100,4 @@ footer {
     background: #0a2540;
     color: white;
     padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #00bfff;
-    display: block;
-    margin-top: 10px;
 }
