@@ -3,20 +3,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* HERO */
+/* HERO IMAGE */
 .hero {
     height: 600px;
     background: url("hero.jpg") center/cover no-repeat;
     position: relative;
 }
 
-/* OVERLAY (léger pour lisibilité) */
+/* OVERLAY (pour lisibilité du texte) */
 .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.35);
 
     display: flex;
     flex-direction: column;
