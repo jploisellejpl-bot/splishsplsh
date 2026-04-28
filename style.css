@@ -7,45 +7,17 @@ body {
 .hero {
     height: 600px;
     background: url("hero.jpg") center/cover no-repeat;
-    position: relative;
 }
 
-/* OVERLAY (pour lisibilité du texte) */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.35);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    text-align: center;
-}
-
-/* TITRE */
-h1 {
-    font-size: 42px;
-    margin: 10px 0;
-}
-
-/* PROMO */
-.promo {
-    color: #00bfff;
-    font-weight: bold;
-}
-
-/* SECTION */
+/* SECTIONS */
 section {
     padding: 50px 20px;
     text-align: center;
     background: #f4f6f9;
+}
+
+h2 {
+    margin-bottom: 30px;
 }
 
 /* CARDS */
@@ -87,4 +59,25 @@ section {
 
 .card a:hover {
     background: #0059c1;
+}
+
+/* MAP */
+.map {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    background: #0a2540;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #00bfff;
+    display: block;
+    margin-top: 10px;
 }
