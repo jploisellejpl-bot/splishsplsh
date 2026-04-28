@@ -1,45 +1,70 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background: #f4f6f9;
+    font-family: Arial, sans-serif;
 }
 
-/* HERO */
+/* HERO IMAGE */
 .hero {
-    background: linear-gradient(to bottom, #0a2540, #0d3b66);
-    text-align: center;
-    padding: 80px 20px;
-    color: white;
+    position: relative;
+    height: 550px;
+
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.hero-logo {
-    width: 400px;
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+/* LOGO */
+.logo {
+    width: 380px;
     max-width: 90%;
     margin-bottom: 20px;
 }
 
-.hero-text h1 {
-    font-size: 40px;
+/* TITRE */
+h1 {
+    font-size: 42px;
+    margin: 10px 0;
 }
 
+/* PROMO */
 .promo {
     color: #00bfff;
     font-weight: bold;
 }
 
-/* SECTIONS */
+/* SECTION */
 section {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
+    background: #f4f6f9;
 }
 
+/* CARDS */
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* CARD */
 .card {
     background: white;
     padding: 20px;
@@ -49,19 +74,18 @@ section {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.promo-price {
+.price {
     font-size: 22px;
     color: #0070f3;
     font-weight: bold;
 }
 
-.old-price {
+.old {
     text-decoration: line-through;
     color: grey;
 }
 
-/* BUTTON */
-.btn {
+.card a {
     display: inline-block;
     margin-top: 10px;
     padding: 12px 20px;
@@ -71,25 +95,6 @@ section {
     text-decoration: none;
 }
 
-.btn:hover {
+.card a:hover {
     background: #0059c1;
-}
-
-/* MAP */
-.map {
-    width: 100%;
-    height: 300px;
-    border: none;
-}
-
-/* FOOTER */
-footer {
-    background: #0a2540;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #00bfff;
 }
