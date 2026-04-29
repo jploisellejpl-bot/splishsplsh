@@ -11,13 +11,13 @@ height:70vh;
 background:url("hero.jpg") center/cover no-repeat;
 }
 
-/* SECTIONS */
+/* SECTION */
 section{
 padding:50px 20px;
 text-align:center;
 }
 
-/* FLEX STABLE */
+/* GRID FLEX */
 .cards{
 display:flex;
 flex-wrap:wrap;
@@ -31,26 +31,63 @@ background:#071c2f;
 padding:20px;
 width:260px;
 border-radius:12px;
-transition:0.3s;
+position:relative;
 }
 
-.card:hover{
-transform:translateY(-5px);
+/* BADGES */
+.badge{
+position:absolute;
+top:-10px;
+left:15px;
+background:#00bfff;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
 }
 
-/* PRIX */
+.badge2{
+position:absolute;
+top:-10px;
+left:15px;
+background:orange;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+}
+
+/* LIST */
+.card ul{
+list-style:none;
+padding:0;
+}
+
+.card li{
+margin:8px 0;
+}
+
+/* TEXT */
 .price{
 color:#00bfff;
 font-size:22px;
 font-weight:bold;
 }
 
-.price span{
-font-size:14px;
+.old{
+text-decoration:line-through;
+color:#888;
+}
+
+.tag{
 color:#aaa;
 }
 
-/* BOUTON */
+.info{
+color:#00bfff;
+font-size:14px;
+margin:5px 0;
+}
+
+/* BUTTON */
 .card a{
 display:block;
 margin-top:15px;
@@ -61,7 +98,7 @@ color:white;
 text-decoration:none;
 }
 
-/* MOBILE CLEAN */
+/* MOBILE */
 @media(max-width:768px){
 
 .cards{
@@ -71,6 +108,10 @@ align-items:center;
 
 .card{
 width:90%;
+}
+
+.hero{
+height:60vh;
 }
 
 }
