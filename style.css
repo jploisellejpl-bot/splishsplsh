@@ -5,65 +5,48 @@ background:#020b16;
 color:white;
 }
 
-/* HERO IMAGE */
+/* HERO */
 .hero{
-height:100vh;
-background:url("hero.jpg") no-repeat center center;
+height:70vh;
+background:url("hero.jpg") no-repeat center top;
 background-size:cover;
-position:relative;
 }
 
-/* BOUTONS HERO */
-.hero-buttons{
-position:absolute;
-bottom:40px;
-left:50%;
-transform:translateX(-50%);
-display:flex;
-gap:10px;
-}
-
-/* CTA */
-.cta{
-background:#00bfff;
-padding:14px 22px;
-border-radius:8px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.cta-call{
-background:#28a745;
-padding:14px 22px;
-border-radius:8px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* SECTIONS */
+/* SECTION */
 section{
 padding:60px 20px;
 text-align:center;
 }
 
-.cards{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+h2{
+margin-bottom:40px;
 }
 
-/* CARDS */
+/* CARDS GRID */
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+/* CARD */
 .card{
 background:rgba(255,255,255,0.05);
 padding:25px;
 width:280px;
 border-radius:15px;
 backdrop-filter:blur(10px);
+transition:0.3s;
+position:relative;
 }
 
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #00bfff;
+}
+
+/* LIST */
 .card ul{
 list-style:none;
 padding:0;
@@ -71,11 +54,21 @@ padding:0;
 
 .card li{
 margin:10px 0;
+position:relative;
+padding-left:20px;
 }
 
-.price{
+.card li::before{
+content:"✔";
+position:absolute;
+left:0;
 color:#00bfff;
+}
+
+/* PRIX */
+.price{
 font-size:22px;
+color:#00bfff;
 font-weight:bold;
 }
 
@@ -89,23 +82,41 @@ text-decoration:line-through;
 color:#777;
 }
 
+.tag{
+color:#ccc;
+margin-bottom:10px;
+}
+
+/* BUTTON */
+.card a{
+display:block;
+margin-top:15px;
+padding:12px;
+background:linear-gradient(90deg,#00bfff,#0070f3);
+border-radius:8px;
+color:white;
+text-decoration:none;
+}
+
 /* BADGES */
 .badge{
+position:absolute;
+top:-10px;
+left:20px;
 background:#00bfff;
 padding:5px 10px;
 border-radius:20px;
 font-size:12px;
-position:absolute;
-margin-top:-20px;
 }
 
 .badge2{
+position:absolute;
+top:-10px;
+left:20px;
 background:orange;
 padding:5px 10px;
 border-radius:20px;
 font-size:12px;
-position:absolute;
-margin-top:-20px;
 }
 
 /* MAP */
@@ -121,34 +132,12 @@ background:#000;
 padding:20px;
 }
 
-/* CALL FLOAT */
-.call-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#28a745;
-color:white;
-width:60px;
-height:60px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-font-size:28px;
-text-decoration:none;
-}
-
 /* MOBILE */
 @media(max-width:768px){
 
 .hero{
-height:75vh;
+height:60vh;
 background-position:center top;
-}
-
-.hero-buttons{
-bottom:20px;
-flex-direction:column;
 }
 
 .card{
