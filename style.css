@@ -5,7 +5,7 @@ background:#020b16;
 color:white;
 }
 
-/* HERO PRO FIX */
+/* HERO */
 .hero{
 height:80vh;
 background:url("hero.jpg") no-repeat center center;
@@ -13,7 +13,6 @@ background-size:cover;
 position:relative;
 }
 
-/* OVERLAY DARK PRO */
 .overlay{
 position:absolute;
 top:0;
@@ -39,7 +38,7 @@ gap:25px;
 
 /* CARD */
 .card{
-background:rgba(255,255,255,0.05);
+background:linear-gradient(145deg,#02101f,#041b2f);
 padding:25px;
 width:280px;
 border-radius:15px;
@@ -48,7 +47,6 @@ transition:0.3s;
 position:relative;
 }
 
-/* HOVER PRO */
 .card:hover{
 transform:translateY(-10px);
 box-shadow:0 0 25px rgba(0,191,255,0.5);
@@ -90,7 +88,6 @@ text-decoration:line-through;
 color:#666;
 }
 
-/* TAG */
 .tag{
 color:#aaa;
 margin-bottom:10px;
@@ -141,16 +138,44 @@ background:#000;
 padding:20px;
 }
 
-/* MOBILE FIX */
+/* 🔥 MOBILE PRO FIX */
 @media(max-width:768px){
 
 .hero{
-height:65vh;
+height:60vh;
 background-position:center;
 }
 
+/* GRID MOBILE PLUS PRO */
+.cards{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+padding:0 10px;
+}
+
+/* CARDS PLUS COMPACTES */
 .card{
-width:90%;
+width:100%;
+padding:18px;
+border-radius:12px;
+}
+
+/* TEXTE AJUSTÉ */
+.card h3{
+font-size:16px;
+}
+
+.price{
+font-size:18px;
+}
+
+.price span{
+font-size:12px;
+}
+
+section{
+padding:40px 15px;
 }
 
 }
