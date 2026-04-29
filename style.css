@@ -1,37 +1,64 @@
 body{
 margin:0;
-font-family:Arial;
+font-family:'Segoe UI', Arial;
 background:#020b16;
 color:white;
 }
 
 /* HERO */
 .hero{
-height:70vh;
+height:75vh;
 background:url("hero.jpg") center/cover no-repeat;
 }
 
 /* SECTION */
 section{
-padding:50px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
-/* GRID FLEX */
+h2{
+margin-bottom:40px;
+}
+
+/* GRID */
 .cards{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:30px;
 }
 
-/* CARD */
+/* CARD PREMIUM */
 .card{
-background:#071c2f;
-padding:20px;
+background:rgba(255,255,255,0.05);
+padding:25px;
 width:260px;
-border-radius:12px;
-position:relative;
+border-radius:15px;
+backdrop-filter:blur(10px);
+
+transition:0.3s;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+/* 🔥 GLOW EFFECT */
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(0,191,255,0.6);
+}
+
+/* HIGHLIGHT */
+.highlight{
+border:1px solid #00bfff;
+box-shadow:0 0 15px rgba(0,191,255,0.3);
+}
+
+.highlight2{
+border:1px solid orange;
+box-shadow:0 0 15px rgba(255,165,0,0.3);
 }
 
 /* BADGES */
@@ -65,16 +92,21 @@ padding:0;
 margin:8px 0;
 }
 
-/* TEXT */
+/* PRICE */
 .price{
 color:#00bfff;
 font-size:22px;
 font-weight:bold;
 }
 
+.price span{
+font-size:14px;
+color:#aaa;
+}
+
 .old{
 text-decoration:line-through;
-color:#888;
+color:#666;
 }
 
 .tag{
@@ -84,18 +116,23 @@ color:#aaa;
 .info{
 color:#00bfff;
 font-size:14px;
-margin:5px 0;
 }
 
 /* BUTTON */
 .card a{
 display:block;
 margin-top:15px;
-padding:10px;
-background:#00bfff;
-border-radius:6px;
+padding:12px;
+background:linear-gradient(90deg,#00bfff,#0070f3);
+border-radius:8px;
 color:white;
 text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.card a:hover{
+box-shadow:0 0 15px #00bfff;
 }
 
 /* MOBILE */
