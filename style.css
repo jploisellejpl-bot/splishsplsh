@@ -25,7 +25,7 @@ justify-content:center;
 gap:25px;
 }
 
-/* CARD STRUCTURE FIX */
+/* CARD */
 .card{
 background:rgba(255,255,255,0.05);
 padding:25px;
@@ -36,12 +36,13 @@ display:flex;
 flex-direction:column;
 justify-content:space-between;
 
-min-height:320px; /* 🔥 clé pour alignement */
+min-height:340px;
+transition:0.3s;
 }
 
-/* GLOW FIX */
+/* GLOW */
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
 box-shadow:0 0 20px #00bfff;
 }
 
@@ -52,11 +53,20 @@ padding:0;
 margin:10px 0;
 }
 
-/* PRICE */
+.card li{
+margin:6px 0;
+}
+
+/* TEXT */
 .price{
 color:#00bfff;
 font-size:22px;
 font-weight:bold;
+}
+
+.price span{
+font-size:14px;
+color:#aaa;
 }
 
 .old{
@@ -64,7 +74,17 @@ text-decoration:line-through;
 color:#666;
 }
 
-/* BOUTON PARFAITEMENT ALIGNÉ */
+.tag{
+color:#aaa;
+}
+
+.info{
+color:#00bfff;
+font-size:14px;
+margin-top:5px;
+}
+
+/* BUTTON ALIGN FIX */
 .card a{
 margin-top:auto;
 padding:12px;
@@ -72,8 +92,29 @@ background:linear-gradient(90deg,#00bfff,#0070f3);
 border-radius:8px;
 color:white;
 text-decoration:none;
-font-weight:bold;
 text-align:center;
+font-weight:bold;
+}
+
+/* BADGES */
+.badge{
+position:absolute;
+top:-10px;
+left:15px;
+background:#00bfff;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+}
+
+.badge2{
+position:absolute;
+top:-10px;
+left:15px;
+background:orange;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
 }
 
 /* MOBILE */
@@ -87,6 +128,10 @@ align-items:center;
 .card{
 width:90%;
 min-height:auto;
+}
+
+.hero{
+height:60vh;
 }
 
 }
