@@ -225,3 +225,23 @@ font-size:18px;
 }
 
 }
+/* HERO MOBILE FIX */
+@media(max-width:768px){
+
+.hero{
+height:65vh;
+
+/* 🔥 au lieu de cover qui zoom trop */
+background-size:contain;
+
+/* centre parfait */
+background-position:center top;
+
+/* empêche répétition */
+background-repeat:no-repeat;
+
+/* petit fond propre si espace */
+background-color:#f4f9fd;
+}
+
+}
