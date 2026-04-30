@@ -1,16 +1,15 @@
-
 /* RESET */
 body{
 margin:0;
 font-family:'Segoe UI', Arial, sans-serif;
-background:#020b16;
-color:white;
+background:#f4f9fd; /* 🔥 fond clair */
+color:#0b2a4a;
 }
 
 /* HERO */
 .hero{
 height:75vh;
-background:url("hero.jpg") center/cover no-repeat;
+background:url("hero.png") center/cover no-repeat;
 }
 
 /* SECTIONS */
@@ -22,6 +21,7 @@ text-align:center;
 h2{
 margin-bottom:40px;
 font-size:28px;
+color:#0b2a4a;
 }
 
 /* GRID */
@@ -34,11 +34,10 @@ gap:30px;
 
 /* CARD */
 .card{
-background:rgba(255,255,255,0.05);
+background:white;
 padding:25px;
 width:260px;
 border-radius:15px;
-backdrop-filter:blur(12px);
 
 display:flex;
 flex-direction:column;
@@ -48,23 +47,26 @@ min-height:360px;
 
 transition:0.3s;
 position:relative;
+
+/* 🔥 glow léger propre */
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
-/* GLOW HOVER */
+/* HOVER GLOW */
 .card:hover{
 transform:translateY(-8px);
-box-shadow:0 0 25px rgba(0,191,255,0.6);
+box-shadow:0 0 25px rgba(0,150,255,0.4);
 }
 
 /* HIGHLIGHT */
 .highlight{
-border:1px solid #00bfff;
-box-shadow:0 0 15px rgba(0,191,255,0.3);
+border:2px solid #00aaff;
+box-shadow:0 0 15px rgba(0,170,255,0.3);
 }
 
 .highlight2{
-border:1px solid orange;
-box-shadow:0 0 15px rgba(255,165,0,0.3);
+border:2px solid #0070f3;
+box-shadow:0 0 15px rgba(0,112,243,0.3);
 }
 
 /* BADGES */
@@ -72,7 +74,8 @@ box-shadow:0 0 15px rgba(255,165,0,0.3);
 position:absolute;
 top:-10px;
 left:15px;
-background:#00bfff;
+background:#00aaff;
+color:white;
 padding:6px 12px;
 border-radius:20px;
 font-size:12px;
@@ -83,7 +86,8 @@ font-weight:bold;
 position:absolute;
 top:-10px;
 left:15px;
-background:orange;
+background:#0070f3;
+color:white;
 padding:6px 12px;
 border-radius:20px;
 font-size:12px;
@@ -103,18 +107,17 @@ padding-left:20px;
 position:relative;
 }
 
-/* CHECK ICON */
 .card li::before{
 content:"✔";
 position:absolute;
 left:0;
-color:#00bfff;
+color:#00aaff;
 font-size:14px;
 }
 
 /* PRICE */
 .price{
-color:#00bfff;
+color:#0070f3;
 font-size:24px;
 font-weight:bold;
 margin-bottom:5px;
@@ -122,27 +125,27 @@ margin-bottom:5px;
 
 .price span{
 font-size:13px;
-color:#ccc;
+color:#555;
 }
 
 /* OLD PRICE */
 .old{
 text-decoration:line-through;
-color:#888;
+color:#999;
 font-size:14px;
 margin-bottom:10px;
 }
 
 /* TAG */
 .tag{
-color:#aaa;
+color:#666;
 margin-bottom:5px;
 font-size:14px;
 }
 
 /* INFO */
 .info{
-color:#00bfff;
+color:#00aaff;
 font-size:14px;
 margin-bottom:10px;
 }
@@ -151,19 +154,18 @@ margin-bottom:10px;
 .card a{
 margin-top:auto;
 padding:14px;
-background:linear-gradient(90deg,#00bfff,#0070f3);
+background:linear-gradient(90deg,#00aaff,#0070f3);
 border-radius:8px;
 color:white;
 text-decoration:none;
 font-weight:bold;
 text-align:center;
-
 transition:0.3s;
 }
 
-/* BUTTON HOVER GLOW */
+/* BUTTON GLOW */
 .card a:hover{
-box-shadow:0 0 15px #00bfff;
+box-shadow:0 0 12px rgba(0,150,255,0.5);
 }
 
 /* MAP */
@@ -182,21 +184,17 @@ line-height:1.6;
 }
 
 .contact a{
-color:#00bfff;
+color:#0070f3;
 text-decoration:none;
 font-weight:bold;
 }
 
 /* FOOTER */
 footer{
-background:#000;
+background:#0b2a4a;
+color:white;
 padding:25px;
 text-align:center;
-}
-
-footer a{
-color:#00bfff;
-text-decoration:none;
 }
 
 /* 📱 MOBILE */
@@ -206,7 +204,6 @@ text-decoration:none;
 height:60vh;
 }
 
-/* stack mobile clean */
 .cards{
 flex-direction:column;
 align-items:center;
@@ -219,7 +216,6 @@ min-height:auto;
 padding:20px;
 }
 
-/* texte ajusté */
 .price{
 font-size:20px;
 }
